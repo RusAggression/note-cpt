@@ -1,0 +1,77 @@
+# Copyright (C) 2025 Prometheus
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Note CPT 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/note-cpt\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-27T09:11:10+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: note-cpt\n"
+
+#. Plugin Name of the plugin
+#: index.php
+msgid "Note CPT"
+msgstr ""
+
+#. Author of the plugin
+#: index.php
+msgid "Prometheus"
+msgstr ""
+
+#: inc/class-admin.php:35
+msgid "Informational Note Details"
+msgstr ""
+
+#: inc/class-noteposttype.php:12
+msgctxt "post type general name"
+msgid "Informational Notes"
+msgstr ""
+
+#: inc/class-noteposttype.php:13
+msgctxt "post type singular name"
+msgid "Informational Note"
+msgstr ""
+
+#: inc/class-noteposttype.php:14
+msgctxt "admin menu"
+msgid "Informational Notes"
+msgstr ""
+
+#: inc/class-noteposttype.php:15
+msgctxt "database"
+msgid "Add New"
+msgstr ""
+
+#: inc/class-noteposttype.php:16
+msgid "Add New Informational Note"
+msgstr ""
+
+#: inc/class-noteposttype.php:17
+msgid "Edit Informational Note"
+msgstr ""
+
+#: inc/class-noteposttype.php:18
+msgid "New Informational Note"
+msgstr ""
+
+#: inc/class-noteposttype.php:19
+msgid "View Informational Note"
+msgstr ""
+
+#: inc/class-noteposttype.php:20
+msgid "Search Informational Notes"
+msgstr ""
+
+#: inc/class-noteposttype.php:21
+msgid "No informational notes found"
+msgstr ""
+
+#: inc/class-noteposttype.php:22
+msgid "No informational notes found in trash"
+msgstr ""

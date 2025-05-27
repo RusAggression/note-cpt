@@ -1,0 +1,38 @@
+{
+    "name": "prometheus/note-cpt",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "autoload": {
+        "classmap": ["inc/"]
+    },
+    "require": {
+        "php": "^8.2",
+        "composer/installers": "^2.0"
+    },
+    "require-dev": {
+        "automattic/vipwpcs": "^3.0",
+        "johnpbloch/wordpress-core": "^6.4.2",
+        "php-stubs/wordpress-stubs": "^6.4.1",
+        "phpcompatibility/phpcompatibility-wp": "^2.1.4",
+        "psalm/plugin-phpunit": "^0.18.4",
+        "vimeo/psalm": "^5.20.0",
+        "wp-cli/i18n-command": "^2.5"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.3"
+        },
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpcs:fix": "phpcbf",
+        "psalm": "psalm --long-progress --no-cache",
+        "test": "phpunit"
+    }
+}

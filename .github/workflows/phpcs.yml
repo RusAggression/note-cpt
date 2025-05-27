@@ -1,0 +1,36 @@
+name: Code Style Check
+
+on:
+  push:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  codestyle:
+    name: Run code style check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@cf4cade2721270509d5b1c766ab3549210a39a2a # 2.33.0
+        with:
+          coverage: none
+        env:
+          fail-fast: 'true'
+
+      - name: Install dependencies
+        uses: ramsey/composer-install@3cf229dc2919194e9e36783941438d17239e8520 # 3.1.1
+
+      - name: Add error matcher
+        run: echo "::add-matcher::$(pwd)/.github/checkstyle-problem-matcher.json"
+
+      - name: Run style check
+        run: composer phpcs -- --report=checkstyle

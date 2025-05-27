@@ -1,0 +1,7 @@
+/*.dist             export-ignore
+/*.stubs            export-ignore
+/.*                 export-ignore
+/composer.lock      export-ignore
+/lang/*.po*         export-ignore
+/lang/Makefile      export-ignore
+/tests/             export-ignore
