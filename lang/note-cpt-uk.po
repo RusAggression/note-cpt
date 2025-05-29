@@ -39,39 +39,41 @@ msgctxt "admin menu"
 msgid "Informational Notes"
 msgstr "Довідки"
 
+#: inc/class-noteposttype.php:18
+msgid "Edit Informational Note"
+msgstr "Редагувати довідку"
+
+#: inc/class-noteposttype.php:19
+msgid "New Informational Note"
+msgstr "Нова довідка"
+
+#: inc/class-noteposttype.php:20
+msgid "View Informational Note"
+msgstr "Переглянути довідку"
+
+#: inc/class-noteposttype.php:21
+msgid "Search Informational Notes"
+msgstr "Шукати інформаційні довідки"
+
+#: inc/class-noteposttype.php:22
+msgid "No informational notes found"
+msgstr "Довідок не знайдено"
+
+#: inc/class-noteposttype.php:23
+msgid "No informational notes found in trash"
+msgstr "У кошику немає інформаційних довідок"
+
 #: inc/class-noteposttype.php:15
-msgctxt "database"
-msgid "Add New"
-msgstr "Додати нову"
+msgctxt "add new from admin bar"
+msgid "Informational Note"
+msgstr "Інформаційну довідку"
 
 #: inc/class-noteposttype.php:16
+msgctxt "add new"
 msgid "Add New Informational Note"
 msgstr "Додати нову довідку"
 
 #: inc/class-noteposttype.php:17
-msgid "Edit Informational Note"
-msgstr "Редагувати довідку"
-
-#: inc/class-noteposttype.php:18
-msgid "New Informational Note"
-msgstr "Нова довідка"
-
-#: inc/class-noteposttype.php:19
-msgid "View Informational Note"
-msgstr "Переглянути довідку"
-
-#: inc/class-noteposttype.php:20
-msgid "Search Informational Notes"
-msgstr "Шукати інформаційні довідки"
-
-#: inc/class-noteposttype.php:21
-msgid "No informational notes found"
-msgstr "Довідки не знайдено"
-
-#: inc/class-noteposttype.php:22
-msgid "No informational notes found in trash"
-msgstr "У кошику немає інформаційних довідок"
-
-#: inc/class-admin.php:35
-msgid "Informational Note Details"
-msgstr "Деталі інформаційної довідки"
+msgctxt "add new item"
+msgid "Add New Informational Note"
+msgstr "Додати нову довідку"

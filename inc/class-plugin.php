@@ -19,12 +19,7 @@ final class Plugin {
 		register_activation_hook( $plugin, [ $this, 'activate' ] );
 		register_deactivation_hook( $plugin, [ $this, 'deactivate' ] );
 
-		add_action( 'plugins_loaded', [ $this, 'plugins_loaded' ] );
 		add_action( 'init', [ $this, 'init' ] );
-
-		if ( is_admin() ) {
-			Admin::get_instance();
-		}
 	}
 
 	public function activate(): void {
@@ -39,11 +34,8 @@ final class Plugin {
 		flush_rewrite_rules();
 	}
 
-	public function plugins_loaded(): void {
-		load_plugin_textdomain( 'org-cpt', false, dirname( plugin_basename( __DIR__ ) ) . '/lang' );
-	}
-
 	public function init(): void {
+		load_plugin_textdomain( 'org-cpt', false, dirname( plugin_basename( __DIR__ ) ) . '/lang' );
 		add_action( 'rest_api_init', [ REST::class, 'get_instance' ] );
 
 		NotePostType::register();
